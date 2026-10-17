@@ -7,7 +7,7 @@ pack (e.g. [Photon](https://github.com/sixthsurge/photon)).
 
 Iris 1.11.4 replaced its old "switch the world to forward-z while shaders are active" with a
 depth transformer: the world now stays in the native reverse-z layout and pack shaders get
-translated (depth reads/writes inverted, `gbufferProjection` undo-rev-z'd, ...).
+translated (depth reads/writes inverted, gbufferProjection undo-rev-z'd, ...).
 
 
 Voxy versions built before that change still force forward-z whenever a shader pack is active, so:
@@ -22,7 +22,7 @@ Voxy versions built before that change still force forward-z whenever a shader p
 <img width="2560" height="1440" alt="withoutvoxydepthfix" src="https://github.com/user-attachments/assets/ce00e5fc-75b4-4415-8cd5-d0ce9035f0c4" />
 
 
-This mod makes Voxy advertize the native reverse-z state, hands the pack undo-rev-z'd
+This mod makes Voxy advertise the native reverse-z state, hands the pack undo-rev-z'd
 vxProj/vxViewProj matrices and runs the injected patch glsl through Iris' own
 TransformPatcher.patchDepth().
 
