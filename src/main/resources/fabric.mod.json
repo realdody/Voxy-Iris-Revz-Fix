@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "voxy-iris-revz-fix",
+  "version": "${version}",
+  "name": "Voxy Iris Reverse-Z Fix",
+  "description": "Compatibility patch for Voxy with Iris 1.11.4+ shader packs. Makes Voxy render in the native reverse-z depth space and transforms its injected shader patches the same way Iris transforms pack shaders. Fixes broken pack depth reads (e.g. duplicated/streaked sky textures with Photon).",
+  "authors": [
+    "realdody"
+  ],
+  "license": "MIT",
+  "environment": "client",
+  "mixins": [
+    {
+      "config": "voxyirisrevzfix.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "minecraft": "~26.2",
+    "fabricloader": ">=0.15.0",
+    "voxy": ">=0.2.17-alpha",
+    "iris": ">=1.11.4"
+  }
+}

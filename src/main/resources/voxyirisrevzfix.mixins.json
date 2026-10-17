@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "dev.realdody.voxyirisrevzfix.mixin",
+  "plugin": "dev.realdody.voxyirisrevzfix.MixinGatingPlugin",
+  "compatibilityLevel": "JAVA_17",
+  "client": [
+    "MixinIrisShaderPatch",
+    "MixinRenderProperties",
+    "MixinVoxyUniforms"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
